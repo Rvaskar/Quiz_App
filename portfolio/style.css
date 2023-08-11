@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body{
+    background-image: url('assets/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* container css */
+.container{
+    margin: auto;
+    width: 60%;
+}
+
+/* nav bar section css */
+nav{
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+    color: #ffffffb4;
+    font-size: 2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 1rem;
+}
+nav ul li a{
+    color: #ffffffb4;
+}
+
+/* home page css */
+.profile-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff
+}
+.section-details{
+    margin: 2rem; 
+}
+.section-details h1{
+    font-size: 2rem;
+}
+.section-details p{
+    font-size: 1.5rem;
+    color: #aaaaaa;
+    margin-top: 0.5rem;
+}
+.profile-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    
+}
+#profile-next button{
+    border: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    width: 50px;
+    height: 50px;
+}
+#profile-next button i{
+    font-size: 2rem;
+    color: white;
+}
+#profile-next {
+    position: relative;
+    right: 16%;
+    top: 40%;
+}
+
+footer{
+    color: #f4f4f4;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    opacity: 0.7;
+}
+footer a{
+    font-size: 0.9rem;
+    color: white;
+}
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 30px solid #fff;
+
+    position: relative;
+    left: -2%;
+}
+
+/* work section css */
+#work{
+    background-color: white;
+    padding: 1rem;
+    width: 106%;
+    margin: auto;
+}
+.image-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+.image-box{
+    margin: 0.3rem;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* contact section css */
+#contact{
+    border: 0.1px solid white; 
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.input-box{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-box input,.input-box textarea{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #f4f4f4;
+    border: none;
+}
+#input-name-email input{
+    width: 48%;
+}
+input[type='submit']{
+    width: auto;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+
+}
+
+.d-none{
+    display: none;
+}
+
+/* mediun screen media query */
+@media screen and (max-width: 768px) {
+
+    .container{
+        width: 95%;
+    }
+    .input-box{
+        flex-direction: column;
+        margin: 1rem;
+    }
+    #input-name-email input{
+        width: 100%;
+    }
+    input[type='email']{
+        margin-top: 1.3rem;
+    }
+    /* profile page media query */
+    .profile-page{
+        flex-direction: column;
+    }
+    .profile-image{
+        width: 100%;
+    }
+    .profile-image img{
+        width: 100%;
+    }
+    #profile-next{
+        right: 8%;
+    }
+    #profile .section-details{
+        text-align: center;
+    }
+
+    .section-details{
+        display: none;
+    }
+    
+    
+}
+/* small screen media query */
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+    #contact{
+        width: 100%;
+    }
+    /* profile section media query */
+    #profile-next{
+        right: 14%;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Multiverse Gallery Project</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242629;
+}
+
+#gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-container {
+  position: relative;
+  flex: 1 0 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .img-container {
+    flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .img-container {
+    flex: 1 0 33.333%;
+  }
+}
+
+footer {
+  background-color: #1f2224;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+#footer-title {
+  font-size: 1.2rem;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+}
+
+#about img {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.5em;
+}
+
+  </style>
+</head>
+
+<body>
+  <div id="gallery-container">
+    <article class="img-container">
+      <img class="gallery-image" src="assets/1.jpg" alt="Image 1" />
+      <span class="title">Image 1</span>
+    </article>
+    <article class="img-container">
+      <img class="gallery-image" src="assets/2.jpg" alt="Image 2" />
+      <span class="title">Image 2</span>
+    </article>
+    <article class="img-container">
+    <img class="gallery-image" src="assets/3.jpg" alt="Image 3" />
+    <span class="title">Image 3</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/4.jpg" alt="Image 4" />
+    <span class="title">Image 4</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/5.jpg" alt="Image 5" />
+    <span class="title">Image 5</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/6.jpg" alt="Image 6" />
+    <span class="title">Image 6</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/7.jpg" alt="Image 7" />
+    <span class="title">Image 7</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/8.jpg" alt="Image 8" />
+    <span class="title">Image 8</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/9.jpg" alt="Image 9" />
+    <span class="title">Image 9</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/10.jpg" alt="Image 10" />
+    <span class="title">Image 10</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/11.jpg" alt="Image 11" />
+    <span class="title">Image 11</span>
+  </article>
+  <article class="img-container">
+    <img class="gallery-image" src="assets/12.jpg" alt="Image 12" />
+    <span class="title">Image 12</span>
+  </div>
+
+  <footer>
+    <p id="footer-title">Multiverse Gallery Project</p>
+    <p id="about">
+      about
+      <img src="assets/info.svg" alt="About" />
+      
+    </p>
+  </footer>
+</body>
+
+</html>

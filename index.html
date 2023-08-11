@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" id="leaderboard">View Highscores <i class="fas fa-hand-point-left fa-lg"></i></a>
+    <div id="timer">Time: --:--</div>
+  </header>
+
+  <main>
+    <div id="startContainer">
+      <h2>Welcome to the Quiz</h2>
+      <p>This is the description of the quiz. Click the button below to start the test.</p>
+      <button id="startButton">Start Test</button>
+    </div>
+
+    <div id="questionContainer" style="display: none;">
+      <h2 id="questionText"></h2>
+      <ul id="optionsList"></ul>
+      <button id="nextButton">Next</button>
+    </div>
+
+    <div id="resultContainer" style="display: none;">
+      <h2>Quiz Completed!</h2>
+      <p id="scoreText"></p>
+      <form id="scoreForm">
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" required>
+        <button type="submit" id="submitScoreButton">Submit</button>
+      </form>
+    </div>
+
+    <div id="highscoresContainer" style="display: none;">
+      <h2>Highscores</h2>
+      <ul id="highscoresList"></ul>
+      <button id="goBackButton">Go Back</button>
+      <button id="clearScoresButton">Clear Scores</button>
+    </div>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
