@@ -1,3 +1,32 @@
+ <h1>Quiz App for learning webdevlopment</h1>
+    <div class="container">
+        <h3> 1) Code</h3>
+        <p>Here is the all files</p>
+        <img src="/op/code.png" alt="codeImage">
+        <p>Javascript</p>
+        <img src="/op/jscode.png" alt="codeImage">
+    </div>
+    <h1>Outputs</h1>
+    <div class="container">
+        <h3>1) Homepage</h3>
+        <p>Home page of our website</p>
+        <p>Click on the start button to start Quiz</p>
+        <img src="/op/home.png" alt="codeImage">
+    </div>
+    <div class="container">
+        <h3>2) Question </h3>
+        <img src="/op/mcq.png" alt="aboutPage">
+    </div>
+    <div class="container">
+        <h3>3) Submission Page </h3>
+        <p>Entering details to save the score with record</p>
+        <img src="/op/submit.png" alt="aboutPage">
+    </div>
+    <div class="container">
+        <h3>4) Score Details </h3>
+        
+        <img src="/op/highScore.png" alt="aboutPage">
+    </div>
 # Codedamn Projects - Quiz App
 ![main image](https://raw.githubusercontent.com/codedamn-projects/quiz-app/master/images/startcard.png)
 
