@@ -24,7 +24,6 @@
     </div>
     <div class="container">
         <h3>4) Score Details </h3>
-        
         <img src="/op/highScore.png" alt="aboutPage">
     </div>
 # Codedamn Projects - Quiz App
